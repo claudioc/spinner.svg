@@ -109,6 +109,15 @@ pre {
 }
 
 @media (max-device-width: 640px) {
+  #bgsize {
+    width: 90%;
+    margin-left: -45%;
+
+    &::-webkit-slider-thumb {
+      width: 30px;
+      height: 90px;
+    }
+  }
   #github-banner {
     font-size: 1.2em;
     width: 300px;
