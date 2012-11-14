@@ -7,8 +7,8 @@
   text-shadow: none;
 }
 html {
-  background: #FAFAC6;
-  color: #353B37;
+  background: #A5BDAB;
+  color: #34353E;
 }
 body {
   font-size: 1em;
@@ -55,7 +55,55 @@ h1 {
   background-size: 200px;
 }
 
-code {
+pre {
+  border: none;
   font-size: 1.2em;
-  overflow: scroll;
+}
+
+// Fork me banner
+#github-banner {
+  display: block;
+  background-color: #684F41;
+  color: #D1A85C;
+  word-spacing: 2px;
+  text-decoration: none;
+  padding: 5px 15px 5px 25px;
+  text-align: center;
+}
+
+@media (max-device-width: 640px) {
+  #github-banner {
+    font-size: 1.2em;
+    width: 300px;
+    margin: 50px auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 18px;
+    border: 1px solid rgba(#000, .2);
+    box-shadow: 0 0 3px 5px rgba(#000, .2);
+  }
+}
+
+@media (min-device-width: 640px) {
+  #github-banner {
+    position: absolute;
+    right: -45px;
+    top: 45px;
+    width: 220px;
+    border-radius: 0;
+
+    -moz-transform:rotate(45deg);
+    -moz-box-shadow: 1px 1px 5px 1px #666;
+
+    -webkit-transform:rotate(45deg);
+    -webkit-box-shadow: 1px 1px 5px 1px #666;
+
+    -ms-transform:rotate(45deg);
+    -ms-box-shadow: 1px 1px 5px 1px #666;
+
+    transform:rotate(45deg);
+    box-shadow: 1px 1px 5px 1px #666;
+
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
+  }
 }
